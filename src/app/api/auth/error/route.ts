@@ -2,8 +2,7 @@
 import { NextResponse } from "next/server";
 
 // Notice the function definition:
-export  function GET(request: Request) {
+export function GET(request: Request) {
   // ...
-  console.log('Response Error',request.json())
-  return NextResponse.json({ message: "Hello World",data: request.text() });
+  return NextResponse.json({ message: "Hello World", data: request.text() });
 }

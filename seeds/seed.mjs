@@ -13,26 +13,26 @@ async function main() {
     ],
   });
 
-  const zavy = await prisma.user.upsert({
-    where: { username: "zavy" },
+  const brand = await prisma.user.upsert({
+    where: { username: "brand" },
 
     update: {},
 
     create: {
-      username: "zavy",
-      name: "Zavy",
+      username: "brand",
+      name: "brand",
       password:
         "$argon2id$v=19$m=65536,t=3,p=4$uVDjpuMv7g3wC6CNgDBy+Q$6HD+S6GGRI3Dp1YQlwwEGuMFWmwuPMMEtiC44YlDzHA",
       seller: {
         create: {
           storeEmail: "",
-          storeName: `Zavy's Store`,
+          storeName: `brand's Store`,
           products: {
             create: [
               {
                 priceInCents: "1000",
                 title: "Mesh Panel Ruched Glitter Top",
-                image: "1668320696/zavy/naqzoqkkf5ieby7pyros",
+                image: "1668320696/brand/naqzoqkkf5ieby7pyros",
                 description: "Slim fit regular sleeve mesh panel",
                 category: {
                   connect: {
