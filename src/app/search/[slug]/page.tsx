@@ -1,7 +1,9 @@
 import ListProduct from "../../../components/Product/productList";
+import { fetchCategory, fetchProduct } from "../../util/server/prismaQuery";
 
-export default function Home(props: any) {
+export default async function Home(props: any) {
   const searchKey = props.params.slug;
-
-  return <ListProduct bySearchKey={searchKey} />;
+  const category = await fetchCategory();
+  const products = await fetchProduct(null, searchKey);
+  return <ListProduct category={category} products={products} />;
 }

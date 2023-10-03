@@ -117,12 +117,12 @@ export default function Header() {
               )}
             </li>
 
-            <label for="check" className="close-menu">
+            <label htmlFor="check" className="close-menu">
               X
             </label>
           </span>
 
-          <label for="check" className="open-menu">
+          <label htmlFor="check" className="open-menu">
             Menu
           </label>
         </ul>

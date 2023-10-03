@@ -1,56 +1,9 @@
 import Product from "./product";
-import { PrismaClient } from "@prisma/client";
+
 import CategoryList from "./CategoryList";
-const prisma = new PrismaClient();
 
-const fetchCategory = async () => {
-  const cat = await prisma.category.findMany({
-    select: {
-      id: true,
-      name: true,
-    },
-  });
-  return cat;
-};
-
-const fetchProduct = async (byeCateGoryId: number, searchKey: string) => {
-  let result;
-  if (byeCateGoryId) {
-    result = await prisma.product.findMany({
-      where: {
-        category: {
-          every: {
-            id: +byeCateGoryId,
-          },
-        },
-      },
-    });
-  } else if (searchKey) {
-    result = await prisma.product.findMany({
-      where: {
-        title: {
-          search: searchKey,
-        },
-      },
-      select: {
-        id: true,
-        priceInCents: true,
-        title: true,
-        image: true,
-        description: true,
-        category: true,
-      },
-    });
-  } else {
-    result = await prisma.product.findMany();
-  }
-  return result;
-};
-
-export default async function ProductList(props: any) {
-  const { byeCateGoryId, bySearchKey } = props;
-  const category = await fetchCategory();
-  const products = await fetchProduct(byeCateGoryId, bySearchKey);
+export default function ProductList(props: any) {
+  const { category, products } = props;
 
   return (
     <div className="flex flex-col w-screen min-h-screen p-10 bg-gray-100 text-gray-800">
@@ -61,8 +14,8 @@ export default async function ProductList(props: any) {
         <CategoryList category={category} />
       </div>
       <div className="grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-6 gap-y-12 w-full mt-6">
-        {products.map((item) => (
-          <Product product={item} />
+        {products.map((item: any) => (
+          <Product key={item.id} product={item} />
         ))}
       </div>
       {/* <div className="flex justify-center mt-10 space-x-1">
