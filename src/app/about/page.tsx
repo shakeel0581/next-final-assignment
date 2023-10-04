@@ -21,28 +21,28 @@ export default async function About() {
               By accessing or using the Service you agree to be bound by these
               Terms. If you disagree with any part of the terms then you may not
               access the Service. Purchases If you wish to purchase any product
-              or service made available through the Service ("Purchase"), you
-              may be asked to supply certain information relevant to your
-              Purchase including, without limitation, your credit card number,
-              the expiration date of your credit card, your billing address, and
-              your shipping information. In certain cases, we may ask for
-              additional informtation or documents to process your order. You
-              represent and warrant that: (i) you have the legal right to use
-              any credit card(s) or other payment method(s) in connection with
-              any Purchase; and that (ii) the information you supply to us is
-              true, correct and complete. By submitting such information, you
-              grant us the right to provide the information to third parties for
-              purposes of facilitating the completion of Purchases. We reserve
-              the right to refuse or cancel your order at any time for certain
-              reasons including but not limited to: product or service
-              availability, errors in the description or price of the product or
-              service, error in your order or other reasons. We reserve the
-              right to refuse or cancel your order if fraud or an unauthorized
-              or illegal transaction is suspected. In the event of a need for
-              refund of any transaction conducted through a debit or credit
-              card, the refund will be issued directly to the original method of
-              payment. We do not offer cash refunds for transactions completed
-              via debit or credit cards.
+              or service made available through the Service
+              (&quot;Purchase&quot;), you may be asked to supply certain
+              information relevant to your Purchase including, without
+              limitation, your credit card number, the expiration date of your
+              credit card, your billing address, and your shipping information.
+              In certain cases, we may ask for additional informtation or
+              documents to process your order. You represent and warrant that:
+              (i) you have the legal right to use any credit card(s) or other
+              payment method(s) in connection with any Purchase; and that (ii)
+              the information you supply to us is true, correct and complete. By
+              submitting such information, you grant us the right to provide the
+              information to third parties for purposes of facilitating the
+              completion of Purchases. We reserve the right to refuse or cancel
+              your order at any time for certain reasons including but not
+              limited to: product or service availability, errors in the
+              description or price of the product or service, error in your
+              order or other reasons. We reserve the right to refuse or cancel
+              your order if fraud or an unauthorized or illegal transaction is
+              suspected. In the event of a need for refund of any transaction
+              conducted through a debit or credit card, the refund will be
+              issued directly to the original method of payment. We do not offer
+              cash refunds for transactions completed via debit or credit cards.
             </p>
           </div>
         </div>
