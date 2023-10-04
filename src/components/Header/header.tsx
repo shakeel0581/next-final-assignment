@@ -19,8 +19,8 @@ export default function Header() {
   };
 
   return (
-    <header style={{ marginBottom: "95px" }}>
-      <nav className="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <header style={{ marginBottom: "95px", zIndex: 200 }}>
+      <nav className="bg-white fixed w-full z-2999990 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <ul className="navigation max-w-[90vw] flex flex-wrap justify-between items-center relative mx-auto py-8">
           <a className="logo" href="#">
             <h3 className="font-bold text-2xl">LOGO</h3>
